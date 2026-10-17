@@ -1,0 +1,10 @@
+{
+  "hint.blocked": "Hier steht schon eine Treppe. {{key}} halten für eine weitere.",
+
+  "config.enabled.name": "Zweite Treppe blockieren",
+  "config.enabled.tooltip": "Wenn du auf einer Minen-Etage schon eine Treppe gesetzt hast, werden weitere dort blockiert, außer du hältst die Taste.",
+  "config.override-key.name": "Taste zum Umgehen",
+  "config.override-key.tooltip": "Halte diese Taste beim Platzieren, um trotzdem eine weitere Treppe zu setzen.",
+  "config.show-hint.name": "Hinweis anzeigen",
+  "config.show-hint.tooltip": "Kurze Meldung, wenn eine Treppe blockiert wurde."
+}

@@ -1,0 +1,16 @@
+{
+  "Name": "Staircase Guard",
+  "Author": "Malenya",
+  "Version": "1.0.0",
+  "Description": "Stops you from wasting a second staircase on a mine level where you already placed one. Hold Shift to place another anyway.",
+  "UniqueID": "Malenya.StaircaseGuard",
+  "EntryDll": "StaircaseGuard.dll",
+  "MinimumApiVersion": "4.0.0",
+  "UpdateKeys": [],
+  "Dependencies": [
+    {
+      "UniqueID": "spacechase0.GenericModConfigMenu",
+      "IsRequired": false
+    }
+  ]
+}
