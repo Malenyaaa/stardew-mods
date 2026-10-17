@@ -3,6 +3,7 @@
   <PropertyGroup>
     <AssemblyName>SignLock</AssemblyName>
     <RootNamespace>SignLock</RootNamespace>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
 </Project>
