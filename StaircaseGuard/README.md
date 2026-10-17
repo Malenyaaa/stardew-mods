@@ -1,10 +1,14 @@
 # Staircase Guard
 
+![Staircase Guard](docs/header.jpg)
+
 A small [SMAPI](https://smapi.io/) mod for Stardew Valley 1.6.
 
 When you place a staircase in the Mines or Skull Cavern, the ladder takes a moment to appear. It's easy to click again and waste a second staircase on the same level. With this mod, once you placed a staircase on a level, further staircases there are blocked and stay in your inventory. Hold **Shift** to place another one anyway.
 
 Every new level starts fresh.
+
+![A blocked second staircase with the hint above the toolbar](docs/in-game.jpg)
 
 You can also place a staircase on the tile you're standing on, which the game normally doesn't allow.
 
