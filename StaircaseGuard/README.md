@@ -6,6 +6,8 @@ When you place a staircase in the Mines or Skull Cavern, the ladder takes a mome
 
 Every new level starts fresh.
 
+You can also place a staircase on the tile you're standing on, which the game normally doesn't allow.
+
 ## Install
 
 1. Install [SMAPI](https://smapi.io/).
@@ -20,6 +22,7 @@ Edit `config.json` (created on first launch) or use [Generic Mod Config Menu](ht
 |---|---|---|
 | `Enabled` | `true` | Turns the guard on or off. |
 | `OverrideKey` | `LeftShift, RightShift` | Hold this while placing to put down another staircase anyway. Any [SMAPI keybind](https://stardewvalleywiki.com/Modding:Player_Guide/Key_Bindings) works, including controller buttons. |
+| `AllowUnderPlayer` | `true` | Lets you place a staircase on the tile you're standing on. |
 | `ShowHint` | `true` | Shows a short message when a staircase was blocked. |
 
 ## Compatibility
