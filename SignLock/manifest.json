@@ -1,0 +1,16 @@
+{
+  "Name": "Sign Lock",
+  "Author": "Malenya",
+  "Version": "1.0.0",
+  "Description": "Stops signs from changing their displayed item when you click them by accident. Hold Shift to change it on purpose.",
+  "UniqueID": "Malenya.SignLock",
+  "EntryDll": "SignLock.dll",
+  "MinimumApiVersion": "4.0.0",
+  "UpdateKeys": [ "Nexus:54057" ],
+  "Dependencies": [
+    {
+      "UniqueID": "spacechase0.GenericModConfigMenu",
+      "IsRequired": false
+    }
+  ]
+}

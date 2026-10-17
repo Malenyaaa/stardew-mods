@@ -1,0 +1,10 @@
+{
+  "hint.locked": "Sign locked. Hold {{key}} to change it.",
+
+  "config.enabled.name": "Lock signs",
+  "config.enabled.tooltip": "Signs that already show an item ignore clicks unless you hold the unlock key.",
+  "config.unlock-key.name": "Unlock key",
+  "config.unlock-key.tooltip": "Hold this while clicking a sign to change its item.",
+  "config.show-hint.name": "Show hint",
+  "config.show-hint.tooltip": "Show a short message when a click on a locked sign was blocked."
+}

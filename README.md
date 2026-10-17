@@ -4,9 +4,8 @@ Small quality-of-life [SMAPI](https://smapi.io/) mods for Stardew Valley 1.6, mo
 
 | Mod | What it does |
 |---|---|
+| [Sign Lock](SignLock) | Stops signs from changing their item when you click them by accident. |
 | [Staircase Guard](StaircaseGuard) | Stops you from wasting a second staircase on a mine level where you already placed one. |
-
-Also by me, in its own repo: [Sign Lock](https://github.com/Malenyaaa/sign-lock), which stops signs from changing their item when clicked by accident.
 
 ## Install
 

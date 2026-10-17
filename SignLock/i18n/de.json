@@ -1,0 +1,10 @@
+{
+  "hint.locked": "Schild gesperrt. {{key}} halten zum Ändern.",
+
+  "config.enabled.name": "Schilder sperren",
+  "config.enabled.tooltip": "Schilder, die schon ein Item zeigen, ignorieren Klicks, außer du hältst die Entsperr-Taste.",
+  "config.unlock-key.name": "Entsperr-Taste",
+  "config.unlock-key.tooltip": "Halte diese Taste beim Klick auf ein Schild, um das Item zu ändern.",
+  "config.show-hint.name": "Hinweis anzeigen",
+  "config.show-hint.tooltip": "Kurze Meldung, wenn ein Klick auf ein gesperrtes Schild blockiert wurde."
+}
