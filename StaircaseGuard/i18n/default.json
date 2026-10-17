@@ -5,6 +5,8 @@
   "config.enabled.tooltip": "Once you placed a staircase on a mine level, further staircases on that level are blocked unless you hold the override key.",
   "config.override-key.name": "Override key",
   "config.override-key.tooltip": "Hold this while placing to put down another staircase anyway.",
+  "config.allow-under-player.name": "Place under yourself",
+  "config.allow-under-player.tooltip": "Allow placing a staircase on the tile you're standing on.",
   "config.show-hint.name": "Show hint",
   "config.show-hint.tooltip": "Show a short message when a staircase placement was blocked."
 }

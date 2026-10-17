@@ -10,6 +10,9 @@ internal sealed class ModConfig
     /// <summary>Hold this while placing to put down another staircase anyway.</summary>
     public KeybindList OverrideKey { get; set; } = KeybindList.Parse("LeftShift, RightShift");
 
+    /// <summary>Allow placing a staircase on the tile you're standing on.</summary>
+    public bool AllowUnderPlayer { get; set; } = true;
+
     /// <summary>Show a short message when a staircase placement was blocked.</summary>
     public bool ShowHint { get; set; } = true;
 }
