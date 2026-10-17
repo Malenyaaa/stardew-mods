@@ -21,6 +21,10 @@ Needs the .NET 6+ SDK. Each mod folder is its own project; shared code lives in 
 dotnet build StaircaseGuard -c Release
 ```
 
+## AI disclosure
+
+These mods were written with the help of an AI coding assistant (Claude by Anthropic). I came up with the ideas, decided how things should behave, tested everything in-game and reviewed the result. The AI wrote most of the code.
+
 ## License
 
 MIT

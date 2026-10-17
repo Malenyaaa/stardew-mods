@@ -40,6 +40,10 @@ Needs the .NET 6+ SDK. Build from the repo root, since the mod uses shared code 
 dotnet build SignLock -c Release
 ```
 
+## AI disclosure
+
+This mod was written with the help of an AI coding assistant (Claude by Anthropic). I came up with the idea, decided how it should behave, tested it in-game and reviewed the result. The AI wrote most of the code.
+
 ## License
 
 MIT
