@@ -15,7 +15,7 @@ You can also place a staircase on the tile you're standing on, which the game no
 ## Install
 
 1. Install [SMAPI](https://smapi.io/).
-2. Download the latest Staircase Guard release from [GitHub](https://github.com/Malenyaaa/stardew-mods/releases) and unzip it into your `Mods` folder.
+2. Download the latest version from [Nexus Mods](https://www.nexusmods.com/stardewvalley/mods/54060) or [GitHub](https://github.com/Malenyaaa/stardew-mods/releases) and unzip it into your `Mods` folder.
 3. Start the game through SMAPI.
 
 ## Config
