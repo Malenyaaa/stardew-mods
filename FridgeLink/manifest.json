@@ -1,0 +1,10 @@
+{
+  "Name": "Fridge Link",
+  "Author": "Malenya",
+  "Version": "1.0.0",
+  "Description": "Link any chest to your kitchen, wherever it stands. Cooking then uses ingredients from linked chests too.",
+  "UniqueID": "Malenya.FridgeLink",
+  "EntryDll": "FridgeLink.dll",
+  "MinimumApiVersion": "4.0.0",
+  "UpdateKeys": []
+}

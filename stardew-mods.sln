@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaircaseGuard", "Staircase
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignLock", "SignLock\SignLock.csproj", "{502466E6-EA91-454A-8872-A679C57E12D6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnchantmentInfo", "EnchantmentInfo\EnchantmentInfo.csproj", "{AC4FC5FD-4665-4CD4-9317-2F9FA8758720}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FridgeLink", "FridgeLink\FridgeLink.csproj", "{F0155224-3D6A-4C5A-B696-F2053A928A0C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +28,13 @@ Global
 		{502466E6-EA91-454A-8872-A679C57E12D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{502466E6-EA91-454A-8872-A679C57E12D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{502466E6-EA91-454A-8872-A679C57E12D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC4FC5FD-4665-4CD4-9317-2F9FA8758720}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC4FC5FD-4665-4CD4-9317-2F9FA8758720}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC4FC5FD-4665-4CD4-9317-2F9FA8758720}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC4FC5FD-4665-4CD4-9317-2F9FA8758720}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0155224-3D6A-4C5A-B696-F2053A928A0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0155224-3D6A-4C5A-B696-F2053A928A0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0155224-3D6A-4C5A-B696-F2053A928A0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0155224-3D6A-4C5A-B696-F2053A928A0C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
