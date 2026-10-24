@@ -1,0 +1,8 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <AssemblyName>EnchantmentInfo</AssemblyName>
+    <RootNamespace>EnchantmentInfo</RootNamespace>
+  </PropertyGroup>
+
+</Project>

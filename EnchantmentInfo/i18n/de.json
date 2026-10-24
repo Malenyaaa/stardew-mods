@@ -1,0 +1,34 @@
+{
+  "hint": "{{key}}: Details",
+
+  "enchantment.ArchaeologistEnchantment.Hoe": "Doppelte Chance auf Artefakte beim Ausgraben von Artefaktstellen.",
+  "enchantment.ArchaeologistEnchantment.Pan": "Mehr Artefakte, Knochenfragmente und Artefaktschätze beim Waschen.",
+  "enchantment.AutoHookEnchantment": "Fische hängen sich selbst an, du musst beim Anbeißen nicht klicken.",
+  "enchantment.BottomlessEnchantment": "Die Gießkanne wird nie leer.",
+  "enchantment.EfficientToolEnchantment": "Benutzen kostet keine Energie.",
+  "enchantment.FisherEnchantment": "Beim Waschen kommt manchmal auch ein Fisch mit hoch.",
+  "enchantment.GenerousEnchantment.Hoe": "Beim Ausgraben (Artefaktstellen, Ton, Winterwurzeln) gibt es oft ein Extra-Item.",
+  "enchantment.GenerousEnchantment.Pan": "Bis zu zwei zusätzliche Funde pro Waschgang.",
+  "enchantment.MasterEnchantment": "+1 Angeln, solange du die Angel hältst.",
+  "enchantment.PowerfulEnchantment.Axe": "Schlägt stärker: Bäume und Stümpfe brauchen weniger Schläge.",
+  "enchantment.PowerfulEnchantment.Pickaxe": "Schlägt stärker: Steine und Felsbrocken brauchen weniger Schläge.",
+  "enchantment.PreservingEnchantment": "Köder und Zubehör verbrauchen sich nur halb so oft.",
+  "enchantment.ReachingToolEnchantment": "Eine Aufladestufe mehr: bis zu 5×5 Felder auf einmal.",
+  "enchantment.ReachingToolEnchantment.Pan": "Erreicht Waschstellen aus größerer Entfernung.",
+  "enchantment.ShavingEnchantment": "Jeder Axtschlag auf Bäume kann schon Holz abwerfen, bevor der Baum fällt.",
+  "enchantment.SwiftToolEnchantment": "Das Werkzeug arbeitet etwa 1,5-mal so schnell.",
+
+  "enchantment.ArtfulEnchantment": "Der Spezialangriff lädt doppelt so schnell auf.",
+  "enchantment.BugKillerEnchantment": "Doppelter Schaden gegen Insekten, Fliegen, Larven, Spinnen und Steinkrabben.",
+  "enchantment.CrusaderEnchantment": "+50 % Schaden gegen Geister, Skelette, Mumien und Schattenwesen. Mumien bleiben liegen.",
+  "enchantment.HaymakerEnchantment": "Unkraut schneiden gibt oft extra Fasern und Heu (ins Silo, wenn Platz ist).",
+  "enchantment.MagicEnchantment": "Jeder Schwung verschießt einen kleinen Sternschuss.",
+  "enchantment.SlimeGathererEnchantment": "Getötete Schleime lassen extra Schleim fallen.",
+  "enchantment.SlimeSlayerEnchantment": "Etwa +33 % Schaden gegen Schleime.",
+  "enchantment.VampiricEnchantment": "Kills heilen dich manchmal (9 % Chance, etwa 10 % der Monster-Lebenspunkte).",
+
+  "config.expand-key.name": "Taste für Details",
+  "config.expand-key.tooltip": "Halte diese Taste, während du über ein verzaubertes Werkzeug oder eine Waffe fährst, um zu sehen, was die Verzauberung macht.",
+  "config.show-hint.name": "Hinweis anzeigen",
+  "config.show-hint.tooltip": "Zeigt im Tooltip eine kleine Zeile, die an die Taste erinnert."
+}

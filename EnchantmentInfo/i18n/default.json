@@ -1,0 +1,34 @@
+{
+  "hint": "{{key}}: details",
+
+  "enchantment.ArchaeologistEnchantment.Hoe": "Double chance for artifacts when digging up artifact spots.",
+  "enchantment.ArchaeologistEnchantment.Pan": "More artifacts, bone fragments and artifact troves when panning.",
+  "enchantment.AutoHookEnchantment": "Fish hook themselves, no need to click when they bite.",
+  "enchantment.BottomlessEnchantment": "The watering can never runs dry.",
+  "enchantment.EfficientToolEnchantment": "Using the tool costs no energy.",
+  "enchantment.FisherEnchantment": "Panning sometimes brings up a fish as well.",
+  "enchantment.GenerousEnchantment.Hoe": "Often gives an extra item when digging (artifact spots, clay, winter roots).",
+  "enchantment.GenerousEnchantment.Pan": "Up to two extra finds per panning.",
+  "enchantment.MasterEnchantment": "+1 Fishing level while you hold the rod.",
+  "enchantment.PowerfulEnchantment.Axe": "Hits harder: trees and stumps take fewer swings.",
+  "enchantment.PowerfulEnchantment.Pickaxe": "Hits harder: rocks and boulders take fewer swings.",
+  "enchantment.PreservingEnchantment": "Bait and tackle are used up only half as often.",
+  "enchantment.ReachingToolEnchantment": "One more charge level: up to 5×5 tiles at once.",
+  "enchantment.ReachingToolEnchantment.Pan": "Reach panning spots from farther away.",
+  "enchantment.ShavingEnchantment": "Chopping trees can drop wood with every swing, before the tree falls.",
+  "enchantment.SwiftToolEnchantment": "The tool works about 1.5× faster.",
+
+  "enchantment.ArtfulEnchantment": "The special attack recharges twice as fast.",
+  "enchantment.BugKillerEnchantment": "Double damage against bugs, flies, grubs, spiders and rock crabs.",
+  "enchantment.CrusaderEnchantment": "+50% damage against ghosts, skeletons, mummies and shadow people. Mummies stay down.",
+  "enchantment.HaymakerEnchantment": "Cutting weeds often gives extra fiber and hay (into your silo if there is room).",
+  "enchantment.MagicEnchantment": "Each swing fires a small star shot.",
+  "enchantment.SlimeGathererEnchantment": "Slimes drop extra slime when killed.",
+  "enchantment.SlimeSlayerEnchantment": "About +33% damage against slimes.",
+  "enchantment.VampiricEnchantment": "Kills sometimes heal you (9% chance, about 10% of the monster's health).",
+
+  "config.expand-key.name": "Details key",
+  "config.expand-key.tooltip": "Hold this while hovering an enchanted tool or weapon to see what its enchantments do.",
+  "config.show-hint.name": "Show hint",
+  "config.show-hint.tooltip": "Show a small line in the tooltip reminding you of the key."
+}
