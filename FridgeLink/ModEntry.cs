@@ -5,6 +5,7 @@ using System.Linq.Expressions;
 using System.Reflection;
 using HarmonyLib;
 using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
 using StardewModdingAPI;
 using StardewModdingAPI.Events;
 using StardewValley;
@@ -36,9 +37,18 @@ internal sealed class ModEntry : Mod
             original: AccessTools.Method(typeof(GameLocation), nameof(GameLocation.ActivateKitchen)),
             prefix: new HarmonyMethod(typeof(ModEntry), nameof(Before_ActivateKitchen))
         );
+        // draw the button as part of the chest menu (right after the organize button), so tooltips, the held item and
+        // anything drawn over the menu stay on top of it
+        harmony.Patch(
+            original: AccessTools.Method(typeof(ClickableTextureComponent), nameof(ClickableTextureComponent.draw), new[] { typeof(SpriteBatch) }),
+            postfix: new HarmonyMethod(typeof(ModEntry), nameof(After_ClickableTextureComponent_Draw))
+        );
+        harmony.Patch(
+            original: AccessTools.Method(typeof(ItemGrabMenu), nameof(ItemGrabMenu.performHoverAction)),
+            postfix: new HarmonyMethod(typeof(ModEntry), nameof(After_ItemGrabMenu_PerformHoverAction))
+        );
 
         helper.Events.GameLoop.GameLaunched += OnGameLaunched;
-        helper.Events.Display.RenderedActiveMenu += OnRenderedActiveMenu;
         helper.Events.Input.ButtonPressed += OnButtonPressed;
     }
 
@@ -113,27 +123,52 @@ internal sealed class ModEntry : Mod
         return chest.modData.ContainsKey(LinkedKey);
     }
 
-    private void OnRenderedActiveMenu(object? sender, RenderedActiveMenuEventArgs e)
+    private static bool IsMouseOver(Rectangle bounds)
     {
-        IClickableMenu menu = Game1.activeClickableMenu;
-        if (GetLinkableChest(menu) is not { } chest)
-            return;
+        return bounds.Contains(Game1.getMouseX(ui_scale: true), Game1.getMouseY(ui_scale: true));
+    }
 
-        Rectangle bounds = GetButtonBounds(menu);
-        bool linked = IsLinked(chest);
-        bool hovered = bounds.Contains(Game1.getMouseX(ui_scale: true), Game1.getMouseY(ui_scale: true));
+    /// <summary>Draw the link button right after the chest menu's organize button.</summary>
+    private static void After_ClickableTextureComponent_Draw(ClickableTextureComponent __instance, SpriteBatch b)
+    {
+        try
+        {
+            IClickableMenu menu = Game1.activeClickableMenu;
+            if (menu is not ItemGrabMenu grabMenu || !ReferenceEquals(__instance, grabMenu.organizeButton) || GetLinkableChest(menu) is not { } chest)
+                return;
 
-        // the mini fridge sprite is 16x32, so draw it at half the usual scale to fit the 64x64 button
-        ParsedItemData fridge = ItemRegistry.GetDataOrErrorItem(MiniFridgeId);
-        IClickableMenu.drawTextureBox(e.SpriteBatch, Game1.mouseCursors, new Rectangle(432, 439, 9, 9), bounds.X, bounds.Y, bounds.Width, bounds.Height, Color.White, 4f, drawShadow: false);
-        float scale = hovered ? 1.6f : 1.4f;
-        Rectangle source = fridge.GetSourceRect();
-        Vector2 center = new(bounds.Center.X, bounds.Center.Y);
-        e.SpriteBatch.Draw(fridge.GetTexture(), center, source, Color.White * (linked ? 1f : 0.4f), 0f, new Vector2(source.Width / 2f, source.Height / 2f), scale, default, 1f);
+            Rectangle bounds = GetButtonBounds(menu);
+            bool linked = Instance.IsLinked(chest);
 
-        if (hovered)
-            IClickableMenu.drawHoverText(e.SpriteBatch, Helper.Translation.Get(linked ? "button.unlink" : "button.link"), Game1.smallFont);
-        menu.drawMouse(e.SpriteBatch);
+            // the mini fridge sprite is 16x32, so draw it at half the usual scale to fit the 64x64 button
+            ParsedItemData fridge = ItemRegistry.GetDataOrErrorItem(MiniFridgeId);
+            IClickableMenu.drawTextureBox(b, Game1.mouseCursors, new Rectangle(432, 439, 9, 9), bounds.X, bounds.Y, bounds.Width, bounds.Height, Color.White, 4f, drawShadow: false);
+            float scale = IsMouseOver(bounds) ? 1.6f : 1.4f;
+            Rectangle source = fridge.GetSourceRect();
+            Vector2 center = new(bounds.Center.X, bounds.Center.Y);
+            b.Draw(fridge.GetTexture(), center, source, Color.White * (linked ? 1f : 0.4f), 0f, new Vector2(source.Width / 2f, source.Height / 2f), scale, default, 1f);
+        }
+        catch (Exception ex)
+        {
+            Instance.Monitor.LogOnce($"Failed drawing the link button:\n{ex}", LogLevel.Error);
+        }
+    }
+
+    /// <summary>Show the link button's tooltip through the menu, so it's drawn like the other buttons' tooltips.</summary>
+    private static void After_ItemGrabMenu_PerformHoverAction(ItemGrabMenu __instance)
+    {
+        try
+        {
+            if (!ReferenceEquals(__instance, Game1.activeClickableMenu) || GetLinkableChest(__instance) is not { } chest)
+                return;
+
+            if (IsMouseOver(GetButtonBounds(__instance)))
+                __instance.hoverText = Instance.Helper.Translation.Get(Instance.IsLinked(chest) ? "button.unlink" : "button.link");
+        }
+        catch (Exception ex)
+        {
+            Instance.Monitor.LogOnce($"Failed setting the link button's tooltip:\n{ex}", LogLevel.Error);
+        }
     }
 
     private void OnButtonPressed(object? sender, ButtonPressedEventArgs e)
@@ -141,7 +176,7 @@ internal sealed class ModEntry : Mod
         if (e.Button != SButton.MouseLeft || GetLinkableChest(Game1.activeClickableMenu) is not { } chest)
             return;
 
-        if (!GetButtonBounds(Game1.activeClickableMenu).Contains(Game1.getMouseX(ui_scale: true), Game1.getMouseY(ui_scale: true)))
+        if (!IsMouseOver(GetButtonBounds(Game1.activeClickableMenu)))
             return;
 
         Helper.Input.Suppress(e.Button);
