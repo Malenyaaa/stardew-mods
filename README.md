@@ -1,11 +1,13 @@
 # Stardew Mods
 
-Small quality-of-life [SMAPI](https://smapi.io/) mods for Stardew Valley 1.6, mostly about stopping misclicks.
+Small quality-of-life [SMAPI](https://smapi.io/) mods for Stardew Valley 1.6.
 
 | Mod | What it does |
 |---|---|
 | [Sign Lock](SignLock) | Stops signs from changing their item when you click them by accident. |
 | [Staircase Guard](StaircaseGuard) | Stops you from wasting a second staircase on a mine level where you already placed one. |
+| [Enchantment Info](EnchantmentInfo) | Hold Shift while hovering an enchanted tool or weapon to see what its enchantments do. |
+| [Fridge Link](FridgeLink) | Link any chest to the kitchen, so cooking uses its ingredients too. |
 
 ## Install
 
