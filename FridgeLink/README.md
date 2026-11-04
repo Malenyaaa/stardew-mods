@@ -16,6 +16,7 @@ Open a chest and click the fridge button below the organize button on the right.
 
 - Stardew Valley 1.6+, SMAPI 4.0+
 - Works with and without [Better Crafting](https://www.nexusmods.com/stardewvalley/mods/11115). With Better Crafting, linked chests are added to its cooking menu.
+- Works with [Love of Cooking](https://www.nexusmods.com/stardewvalley/mods/6830). Linked chests are added to its cooking menu.
 - Normal chests and big chests can be linked. Fridges, mini fridges and special chests (like the Junimo chest) can't.
 - Links are saved with the chest, so they stay after reloading. In multiplayer, every player who wants to cook from linked chests needs the mod.
 - Translations: English, German.

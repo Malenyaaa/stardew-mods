@@ -27,15 +27,20 @@ internal sealed class ModEntry : Mod
     /// <summary>Whether Better Crafting replaces the kitchen menu, in which case linked chests are added through its API instead.</summary>
     private bool UsingBetterCrafting;
 
+    /// <summary>The linked chests, refreshed every second, so their mutexes can be updated outside their location.</summary>
+    private List<Chest> CachedLinkedChests = new();
+
     public override void Entry(IModHelper helper)
     {
         Instance = this;
         LinkedKey = $"{ModManifest.UniqueID}/Linked";
 
         var harmony = new Harmony(ModManifest.UniqueID);
+        // low priority so mods that replace the kitchen menu (like Love of Cooking) get to run their prefix first; if
+        // they skip the original, Harmony skips this prefix too
         harmony.Patch(
             original: AccessTools.Method(typeof(GameLocation), nameof(GameLocation.ActivateKitchen)),
-            prefix: new HarmonyMethod(typeof(ModEntry), nameof(Before_ActivateKitchen))
+            prefix: new HarmonyMethod(typeof(ModEntry), nameof(Before_ActivateKitchen)) { priority = Priority.Low }
         );
         // draw the button as part of the chest menu (right after the organize button), so tooltips, the held item and
         // anything drawn over the menu stay on top of it
@@ -49,10 +54,81 @@ internal sealed class ModEntry : Mod
         );
 
         helper.Events.GameLoop.GameLaunched += OnGameLaunched;
+        helper.Events.GameLoop.UpdateTicked += OnUpdateTicked;
+        helper.Events.GameLoop.ReturnedToTitle += (_, _) => CachedLinkedChests.Clear();
         helper.Events.Input.ButtonPressed += OnButtonPressed;
     }
 
     private void OnGameLaunched(object? sender, GameLaunchedEventArgs e)
+    {
+        PatchLoveOfCooking();
+        SubscribeToBetterCrafting();
+    }
+
+    /// <summary>
+    /// The game only updates a chest's mutex while the player is in its location, so a lock requested for a linked chest
+    /// elsewhere would never be granted. Update those mutexes here instead (this also lets the host handle farmhands'
+    /// requests).
+    /// </summary>
+    private void OnUpdateTicked(object? sender, UpdateTickedEventArgs e)
+    {
+        if (!Context.IsWorldReady)
+            return;
+
+        if (e.IsMultipleOf(60))
+            CachedLinkedChests = GetLinkedChests();
+
+        // pass all online players instead of the location's, since updating with the location's players would release
+        // the lock right away when its owner is elsewhere (e.g. cooking in the house from a chest on the farm)
+        FarmerCollection? farmers = null;
+        foreach (Chest chest in CachedLinkedChests)
+        {
+            GameLocation? location = chest.Location;
+            if (location != null && !ReferenceEquals(location, Game1.currentLocation))
+                chest.mutex.Update(farmers ??= Game1.getOnlineFarmers());
+        }
+    }
+
+    /// <summary>Love of Cooking replaces the kitchen with its own menu, so add the linked chests to that menu.</summary>
+    private void PatchLoveOfCooking()
+    {
+        if (!Helper.ModRegistry.IsLoaded("blueberry.LoveOfCooking"))
+            return;
+
+        Type? menuType = AccessTools.TypeByName("LoveOfCooking.Menu.CookingMenu");
+        ConstructorInfo? constructor = menuType?.GetConstructors().FirstOrDefault(c => c.GetParameters().Any(p => p.Name == "materialContainers" && p.ParameterType == typeof(Dictionary<IInventory, Chest>)));
+        if (constructor is null)
+        {
+            Monitor.Log("Love of Cooking is installed, but its cooking menu has changed. Linked chests won't be available in it.", LogLevel.Warn);
+            return;
+        }
+
+        new Harmony(ModManifest.UniqueID).Patch(
+            original: constructor,
+            prefix: new HarmonyMethod(typeof(ModEntry), nameof(Before_LoveOfCooking_CookingMenu))
+        );
+    }
+
+    /// <summary>Add the linked chests to Love of Cooking's ingredient containers.</summary>
+    private static void Before_LoveOfCooking_CookingMenu(ref Dictionary<IInventory, Chest>? materialContainers)
+    {
+        try
+        {
+            List<Chest> linked = Instance.GetLinkedChests();
+            if (linked.Count == 0)
+                return;
+
+            materialContainers ??= new Dictionary<IInventory, Chest>();
+            foreach (Chest chest in linked)
+                materialContainers.TryAdd(chest.Items, chest);
+        }
+        catch (Exception ex)
+        {
+            Instance.Monitor.LogOnce($"Failed adding linked chests to Love of Cooking:\n{ex}", LogLevel.Error);
+        }
+    }
+
+    private void SubscribeToBetterCrafting()
     {
         // Better Crafting's event can't be mapped through a SMAPI API interface, so subscribe to it directly
         object? api = Helper.ModRegistry.GetApi("leclair.bettercrafting");
@@ -184,6 +260,7 @@ internal sealed class ModEntry : Mod
             chest.modData.Remove(LinkedKey);
         else
             chest.modData[LinkedKey] = "true";
+        CachedLinkedChests = GetLinkedChests();
         Game1.playSound("drumkit6");
     }
 
@@ -212,6 +289,7 @@ internal sealed class ModEntry : Mod
                 return true;
 
             List<Chest> linked = Instance.GetLinkedChests();
+            Instance.CachedLinkedChests = linked;
             if (linked.Count == 0)
                 return true;
 
