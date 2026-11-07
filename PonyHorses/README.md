@@ -1,4 +1,4 @@
-# Pony Horses
+# My Little Pony Horse
 
 Turn your horse into one of the six main ponies from *My Little Pony: Friendship is Magic*:
 Twilight Sparkle, Rarity, Rainbow Dash, Fluttershy, Pinkie Pie or Applejack.
