@@ -1,0 +1,12 @@
+{
+  "config.enabled.name": "Gras unter Dingen stehen lassen",
+  "config.enabled.tooltip": "Schaltet die Mod an oder aus. Aus heißt: Die Sense mäht alles Gras wie gewohnt.",
+  "config.under-fences.name": "Unter Zäunen und Toren",
+  "config.under-fences.tooltip": "Gras unter Zäunen und Toren bleibt stehen.",
+  "config.under-objects.name": "Unter Maschinen und Objekten",
+  "config.under-objects.tooltip": "Gras unter platzierten Dingen wie Maschinen, Truhen, Sprinklern, Vogelscheuchen oder Schildern bleibt stehen. Unkraut, Steine und Sammelgut zählen nicht.",
+  "config.under-furniture.name": "Unter Möbeln",
+  "config.under-furniture.tooltip": "Gras unter Möbeln, die draußen stehen (z. B. Bänke oder Lampen), bleibt stehen.",
+  "config.all-weapons.name": "Auch bei Schwertern und anderen Waffen",
+  "config.all-weapons.tooltip": "Gras bleibt auch stehen, wenn du mit Schwert oder Dolch schlägst. Aus heißt: Nur die Sense lässt es stehen."
+}

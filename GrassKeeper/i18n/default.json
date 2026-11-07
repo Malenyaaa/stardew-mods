@@ -1,0 +1,12 @@
+{
+  "config.enabled.name": "Keep grass under things",
+  "config.enabled.tooltip": "Turns the mod on or off. When off, your scythe cuts all grass as usual.",
+  "config.under-fences.name": "Under fences and gates",
+  "config.under-fences.tooltip": "Keep the grass under fences and gates.",
+  "config.under-objects.name": "Under machines and objects",
+  "config.under-objects.tooltip": "Keep the grass under placed objects like machines, chests, sprinklers, scarecrows or signs. Weeds, stones and forage don't count.",
+  "config.under-furniture.name": "Under furniture",
+  "config.under-furniture.tooltip": "Keep the grass under furniture placed outside, like benches or lamps.",
+  "config.all-weapons.name": "Swords and other weapons too",
+  "config.all-weapons.tooltip": "Also keep the grass when you swing a sword or dagger. When off, only scythes leave it alone."
+}

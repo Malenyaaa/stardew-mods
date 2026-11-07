@@ -1,0 +1,8 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <AssemblyName>GreenRainToggle</AssemblyName>
+    <RootNamespace>GreenRainToggle</RootNamespace>
+  </PropertyGroup>
+
+</Project>

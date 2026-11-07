@@ -1,0 +1,16 @@
+{
+  "Name": "Grass Keeper",
+  "Author": "Malenya",
+  "Version": "1.0.0",
+  "Description": "Your scythe leaves the grass under fences, machines and furniture alone. Grass on open ground is cut as usual.",
+  "UniqueID": "Malenya.GrassKeeper",
+  "EntryDll": "GrassKeeper.dll",
+  "MinimumApiVersion": "4.0.0",
+  "UpdateKeys": [ "Nexus:55175" ],
+  "Dependencies": [
+    {
+      "UniqueID": "spacechase0.GenericModConfigMenu",
+      "IsRequired": false
+    }
+  ]
+}

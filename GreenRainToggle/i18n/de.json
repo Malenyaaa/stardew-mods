@@ -1,0 +1,12 @@
+{
+  "config.enabled.name": "Grünen Regen abschalten",
+  "config.enabled.tooltip": "Grüner Regen kommt nicht mehr. Gilt ab dem nächsten Tag; ein Grüner Regen, der gerade läuft, endet ganz normal.",
+  "config.replace-with-rain.name": "Stattdessen normaler Regen",
+  "config.replace-with-rain.tooltip": "An: Am Tag, an dem Grüner Regen gekommen wäre, regnet es normal, deine Pflanzen werden also gegossen. Aus: An dem Tag gibt es das normale Zufallswetter.",
+  "config.keep-first-year.name": "Im ersten Jahr behalten",
+  "config.keep-first-year.tooltip": "Grüner Regen kommt im ersten Jahr trotzdem, damit die einmaligen Story-Momente (Brief von Gus, Treffen im Saloon) passieren.",
+  "calendar.state-on": "Grüner Regen: an",
+  "calendar.state-off-rain": "Grüner Regen: aus (stattdessen normaler Regen)",
+  "calendar.state-off-weather": "Grüner Regen: aus (stattdessen normales Wetter)",
+  "calendar.host-only": "Das kann nur der Gastgeber ändern."
+}

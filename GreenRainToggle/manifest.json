@@ -1,0 +1,16 @@
+{
+  "Name": "Green Rain Toggle",
+  "Author": "Malenya",
+  "Version": "1.0.0",
+  "Description": "Turns off Green Rain. The day it would have come gets normal rain instead (or normal weather, if you prefer).",
+  "UniqueID": "Malenya.GreenRainToggle",
+  "EntryDll": "GreenRainToggle.dll",
+  "MinimumApiVersion": "4.0.0",
+  "UpdateKeys": [ "Nexus:55178" ],
+  "Dependencies": [
+    {
+      "UniqueID": "spacechase0.GenericModConfigMenu",
+      "IsRequired": false
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "config.enabled.name": "Turn off Green Rain",
+  "config.enabled.tooltip": "Green Rain no longer comes. Takes effect from the next day; a Green Rain that's already happening finishes normally.",
+  "config.replace-with-rain.name": "Normal rain instead",
+  "config.replace-with-rain.tooltip": "On: the day Green Rain would have come gets normal rain, so your crops still get watered. Off: that day gets the normal random weather.",
+  "config.keep-first-year.name": "Keep it in year 1",
+  "config.keep-first-year.tooltip": "Keep Green Rain in the first year, so its one-time story moments (Gus's letter, the town gathering at the saloon) still happen.",
+  "calendar.state-on": "Green Rain: on",
+  "calendar.state-off-rain": "Green Rain: off (normal rain instead)",
+  "calendar.state-off-weather": "Green Rain: off (normal weather instead)",
+  "calendar.host-only": "Only the host can change this."
+}

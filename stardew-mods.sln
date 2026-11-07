@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PonyHorses", "PonyHorses\Po
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuietTownTrees", "QuietTownTrees\QuietTownTrees.csproj", "{A934C8C6-F372-4D74-B740-B16E7AA211E0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrassKeeper", "GrassKeeper\GrassKeeper.csproj", "{C78A7BFA-CBBF-436D-8F7B-5AE302EA3354}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreenRainToggle", "GreenRainToggle\GreenRainToggle.csproj", "{7488BF13-7BF3-4B62-B1E9-6F52B75343EE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,5 +52,13 @@ Global
 		{A934C8C6-F372-4D74-B740-B16E7AA211E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A934C8C6-F372-4D74-B740-B16E7AA211E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A934C8C6-F372-4D74-B740-B16E7AA211E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C78A7BFA-CBBF-436D-8F7B-5AE302EA3354}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C78A7BFA-CBBF-436D-8F7B-5AE302EA3354}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C78A7BFA-CBBF-436D-8F7B-5AE302EA3354}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C78A7BFA-CBBF-436D-8F7B-5AE302EA3354}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7488BF13-7BF3-4B62-B1E9-6F52B75343EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7488BF13-7BF3-4B62-B1E9-6F52B75343EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7488BF13-7BF3-4B62-B1E9-6F52B75343EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7488BF13-7BF3-4B62-B1E9-6F52B75343EE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
