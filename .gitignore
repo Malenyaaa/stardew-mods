@@ -3,3 +3,6 @@ obj/
 .vs/
 .idea/
 *.user
+
+# pony sprites are based on ponett's pixel art: not to be published without the artist's permission
+PonyHorses/assets/*.png

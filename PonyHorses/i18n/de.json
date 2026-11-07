@@ -1,0 +1,14 @@
+{
+  "menu.question": "Wie soll {{name}} aussehen?",
+  "menu.your-horse": "dein Pferd",
+  "menu.horse": "Normales Pferd",
+  "menu.cancel": "Abbrechen",
+
+  "hint.no-horse": "Stell dich neben dein Pferd oder reite es, um ein Pony auszuwählen.",
+  "hint.not-yours": "Das ist nicht dein Pferd.",
+  "hint.no-hats": "Ponys tragen keine Hüte.",
+  "hint.hat-returned": "Ponys tragen keine Hüte, du hast den Hut zurückbekommen.",
+
+  "config.choose-key.name": "Taste: Pony wählen",
+  "config.choose-key.tooltip": "Drück diese Taste, während du dein Pferd reitest oder daneben stehst, um auszuwählen, welches Pony es ist."
+}

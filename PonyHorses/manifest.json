@@ -1,0 +1,10 @@
+{
+  "Name": "Pony Horses",
+  "Author": "Malenya",
+  "Version": "1.0.0",
+  "Description": "Turn your horse into one of the Mane Six ponies. Press P while riding or standing next to your horse to choose.",
+  "UniqueID": "Malenya.PonyHorses",
+  "EntryDll": "PonyHorses.dll",
+  "MinimumApiVersion": "4.0.0",
+  "UpdateKeys": []
+}

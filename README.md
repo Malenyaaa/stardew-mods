@@ -8,6 +8,7 @@ Small quality-of-life [SMAPI](https://smapi.io/) mods for Stardew Valley 1.6.
 | [Staircase Guard](StaircaseGuard) | Stops you from wasting a second staircase on a mine level where you already placed one. |
 | [Enchantment Info](EnchantmentInfo) | Hold Shift while hovering an enchanted tool or weapon to see what its enchantments do. |
 | [Fridge Link](FridgeLink) | Link any chest to the kitchen, so cooking uses its ingredients too. |
+| [Pony Horses](PonyHorses) | Turn your horse into one of the Mane Six ponies and switch any time in-game. Sprites not included in this repo. |
 
 ## Planned
 
@@ -15,7 +16,6 @@ Ideas players asked for that no mod covers yet (checked November 2026). Not star
 
 | Idea | What it would do | Asked for in |
 |---|---|---|
-| Pony horses | Pony skins for the horse as a Content Patcher pack, remaking the 2016 [My Little Pony horse mod](https://www.nexusmods.com/stardewvalley/mods/123) by fumaryako, which still replaces game files directly. Credit goes to the original. | Nexus |
 | Jas moves in | After marrying Shane, Jas comes to live on the farm. | [r/StardewValleyMods](https://www.reddit.com/r/StardewValleyMods/comments/1qz82fb) |
 | Iridium monsters | Monsters get the double health and speed of the red Iridium Bat, and its red tint. | [mod-ideas #1468](https://github.com/StardewModders/mod-ideas/issues/1468) |
 | Quiet town trees | Drops the "I shouldn't cut down trees in town" message without making town trees choppable. | [r/StardewValleyMods](https://www.reddit.com/r/StardewValleyMods/comments/1o4w7wx) |

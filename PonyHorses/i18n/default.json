@@ -1,0 +1,14 @@
+{
+  "menu.question": "How should {{name}} look?",
+  "menu.your-horse": "your horse",
+  "menu.horse": "Normal horse",
+  "menu.cancel": "Cancel",
+
+  "hint.no-horse": "Stand next to your horse or ride it to choose a pony.",
+  "hint.not-yours": "That's not your horse.",
+  "hint.no-hats": "Ponies don't wear hats.",
+  "hint.hat-returned": "Ponies don't wear hats, so you got the hat back.",
+
+  "config.choose-key.name": "Choose pony key",
+  "config.choose-key.tooltip": "Press this while riding or standing next to your horse to choose which pony it is."
+}

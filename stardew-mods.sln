@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnchantmentInfo", "Enchantm
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FridgeLink", "FridgeLink\FridgeLink.csproj", "{F0155224-3D6A-4C5A-B696-F2053A928A0C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PonyHorses", "PonyHorses\PonyHorses.csproj", "{9FAD2383-1581-4D21-A8C6-2EEBA2D760D8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +38,9 @@ Global
 		{F0155224-3D6A-4C5A-B696-F2053A928A0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F0155224-3D6A-4C5A-B696-F2053A928A0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F0155224-3D6A-4C5A-B696-F2053A928A0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FAD2383-1581-4D21-A8C6-2EEBA2D760D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FAD2383-1581-4D21-A8C6-2EEBA2D760D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FAD2383-1581-4D21-A8C6-2EEBA2D760D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FAD2383-1581-4D21-A8C6-2EEBA2D760D8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
