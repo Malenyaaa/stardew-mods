@@ -1,0 +1,16 @@
+{
+  "Name": "Quiet Town Trees",
+  "Author": "Malenya",
+  "Version": "1.0.0",
+  "Description": "Removes the \"I shouldn't cut down trees in town\" message. Town trees still can't be cut down, your axe just bounces off quietly.",
+  "UniqueID": "Malenya.QuietTownTrees",
+  "EntryDll": "QuietTownTrees.dll",
+  "MinimumApiVersion": "4.0.0",
+  "UpdateKeys": [ "Nexus:55177" ],
+  "Dependencies": [
+    {
+      "UniqueID": "spacechase0.GenericModConfigMenu",
+      "IsRequired": false
+    }
+  ]
+}

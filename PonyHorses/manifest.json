@@ -6,5 +6,5 @@
   "UniqueID": "Malenya.PonyHorses",
   "EntryDll": "PonyHorses.dll",
   "MinimumApiVersion": "4.0.0",
-  "UpdateKeys": []
+  "UpdateKeys": [ "Nexus:55174" ]
 }

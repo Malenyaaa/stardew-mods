@@ -1,0 +1,4 @@
+{
+  "config.enabled.name": "Stadtbaum-Meldung ausblenden",
+  "config.enabled.tooltip": "Blendet die Meldung aus, die kommt, wenn du mit der Axt einen Baum in der Stadt triffst. Die Bäume lassen sich trotzdem nicht fällen."
+}

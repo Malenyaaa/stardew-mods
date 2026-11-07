@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FridgeLink", "FridgeLink\Fr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PonyHorses", "PonyHorses\PonyHorses.csproj", "{9FAD2383-1581-4D21-A8C6-2EEBA2D760D8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuietTownTrees", "QuietTownTrees\QuietTownTrees.csproj", "{A934C8C6-F372-4D74-B740-B16E7AA211E0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,5 +44,9 @@ Global
 		{9FAD2383-1581-4D21-A8C6-2EEBA2D760D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9FAD2383-1581-4D21-A8C6-2EEBA2D760D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9FAD2383-1581-4D21-A8C6-2EEBA2D760D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A934C8C6-F372-4D74-B740-B16E7AA211E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A934C8C6-F372-4D74-B740-B16E7AA211E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A934C8C6-F372-4D74-B740-B16E7AA211E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A934C8C6-F372-4D74-B740-B16E7AA211E0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

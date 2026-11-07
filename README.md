@@ -9,6 +9,7 @@ Small quality-of-life [SMAPI](https://smapi.io/) mods for Stardew Valley 1.6.
 | [Enchantment Info](EnchantmentInfo) | Hold Shift while hovering an enchanted tool or weapon to see what its enchantments do. |
 | [Fridge Link](FridgeLink) | Link any chest to the kitchen, so cooking uses its ingredients too. |
 | [My Little Pony Horse](PonyHorses) | Turn your horse into one of the Mane Six ponies and switch any time in-game. Sprites not included in this repo. |
+| [Quiet Town Trees](QuietTownTrees) | Removes the "I shouldn't cut down trees in town" message. Town trees still can't be cut down. |
 
 ## Planned
 
@@ -18,7 +19,6 @@ Ideas players asked for that no mod covers yet (checked November 2026). Not star
 |---|---|---|
 | Jas moves in | After marrying Shane, Jas comes to live on the farm. | [r/StardewValleyMods](https://www.reddit.com/r/StardewValleyMods/comments/1qz82fb) |
 | Iridium monsters | Monsters get the double health and speed of the red Iridium Bat, and its red tint. | [mod-ideas #1468](https://github.com/StardewModders/mod-ideas/issues/1468) |
-| Quiet town trees | Drops the "I shouldn't cut down trees in town" message without making town trees choppable. | [r/StardewValleyMods](https://www.reddit.com/r/StardewValleyMods/comments/1o4w7wx) |
 | Green Rain toggle | Turns Green Rain off. | [Steam](https://steamcommunity.com/app/413150/discussions/0/844005624123510853/) |
 | Grass under things | The scythe leaves grass under fences, furniture and machines alone. | [r/StardewValleyMods](https://www.reddit.com/r/StardewValleyMods/comments/1vsz8ja) |
 | Big shipping totals | Shows end-of-day totals above 10 million gold correctly. | [r/SMAPI](https://www.reddit.com/r/SMAPI/comments/1srmy55) |

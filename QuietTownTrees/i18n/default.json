@@ -1,0 +1,4 @@
+{
+  "config.enabled.name": "Hide town tree message",
+  "config.enabled.tooltip": "Hides the message you get when you hit a town tree with your axe. The trees still can't be cut down."
+}

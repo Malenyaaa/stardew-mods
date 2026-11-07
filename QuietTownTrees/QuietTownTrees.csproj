@@ -1,0 +1,8 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <AssemblyName>QuietTownTrees</AssemblyName>
+    <RootNamespace>QuietTownTrees</RootNamespace>
+  </PropertyGroup>
+
+</Project>
