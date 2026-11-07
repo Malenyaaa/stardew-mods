@@ -24,6 +24,7 @@ Edit `config.json` (created on first launch) or use [Generic Mod Config Menu](ht
 ## Compatibility
 
 - Stardew Valley 1.6+, SMAPI 4.0+
+- [Scythe Tool Enchantments](https://www.nexusmods.com/stardewvalley/mods/26217): its iridium scythe enchantments (Gatherer, Horticulturist, Palaeontologist, Reaper, Great Crescent) get descriptions too.
 - Works in multiplayer. Each player only needs it if they want the descriptions for themselves.
 - Translations: English, German.
 

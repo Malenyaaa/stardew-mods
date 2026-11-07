@@ -27,6 +27,12 @@
   "enchantment.SlimeSlayerEnchantment": "Etwa +33 % Schaden gegen Schleime.",
   "enchantment.VampiricEnchantment": "Kills heilen dich manchmal (9 % Chance, etwa 10 % der Monster-Lebenspunkte).",
 
+  "enchantment.CrescentEnchantment": "Breiterer, sichelförmiger Schwung, der mehr Felder auf einmal schneidet und erntet. Kann auch Riesenpflanzen fällen.",
+  "enchantment.GathererEnchantment": "50 % Chance auf eine extra Faser aus Unkraut und extra Heu aus Gras. Schläge auf bemooste Bäume geben extra Moos.",
+  "enchantment.HorticulturistEnchantment": "Blumen mit der Sense ernten gibt eine zusätzliche Blume (normale Qualität).",
+  "enchantment.PalaeontologistEnchantment": "Unkraut oder Gras schneiden: 50 % Chance auf ein Knochenfragment, 5 % auf ein zufälliges Fossil.",
+  "enchantment.ReaperEnchantment": "Macht die Sense zur echten Waffe (Schaden, Tempo und Krit-Chance angelehnt an die Unendlichkeitsklinge). Monster lassen eine zweite Runde Beute fallen.",
+
   "config.expand-key.name": "Taste für Details",
   "config.expand-key.tooltip": "Halte diese Taste, während du über ein verzaubertes Werkzeug oder eine Waffe fährst, um zu sehen, was die Verzauberung macht.",
   "config.show-hint.name": "Hinweis anzeigen",

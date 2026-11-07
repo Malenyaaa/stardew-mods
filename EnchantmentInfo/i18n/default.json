@@ -27,6 +27,12 @@
   "enchantment.SlimeSlayerEnchantment": "About +33% damage against slimes.",
   "enchantment.VampiricEnchantment": "Kills sometimes heal you (9% chance, about 10% of the monster's health).",
 
+  "enchantment.CrescentEnchantment": "Wider, crescent-shaped swing that cuts and harvests more tiles at once. Can also cut down giant crops.",
+  "enchantment.GathererEnchantment": "50% chance of an extra fiber from weeds and an extra hay from grass. Hitting a mossy tree gives an extra moss.",
+  "enchantment.HorticulturistEnchantment": "Harvesting flowers with the scythe gives one extra flower (normal quality).",
+  "enchantment.PalaeontologistEnchantment": "Cutting weeds or grass: 50% chance of a bone fragment, 5% chance of a random fossil.",
+  "enchantment.ReaperEnchantment": "Turns the scythe into a real weapon (damage, speed and crit chance based on the Infinity Blade). Monsters drop a second round of loot.",
+
   "config.expand-key.name": "Details key",
   "config.expand-key.tooltip": "Hold this while hovering an enchanted tool or weapon to see what its enchantments do.",
   "config.show-hint.name": "Show hint",

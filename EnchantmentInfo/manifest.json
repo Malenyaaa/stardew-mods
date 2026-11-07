@@ -1,12 +1,12 @@
 {
   "Name": "Enchantment Info",
   "Author": "Malenya",
-  "Version": "1.0.0",
+  "Version": "1.1.0",
   "Description": "Hold Shift while hovering an enchanted tool or weapon to see what its enchantment does.",
   "UniqueID": "Malenya.EnchantmentInfo",
   "EntryDll": "EnchantmentInfo.dll",
   "MinimumApiVersion": "4.0.0",
-  "UpdateKeys": [],
+  "UpdateKeys": [ "Nexus:54958" ],
   "Dependencies": [
     {
       "UniqueID": "spacechase0.GenericModConfigMenu",
